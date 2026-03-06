@@ -1,0 +1,31 @@
+-- Criar tabela de clientes
+CREATE TABLE Clientes (
+    ClienteID INT PRIMARY KEY,
+    Nome VARCHAR(50),
+    Regiao VARCHAR(20)
+);
+
+-- Criar tabela de vendas
+CREATE TABLE Vendas (
+    VendaID INT PRIMARY KEY,
+    ClienteID INT,
+    Produto VARCHAR(50),
+    Quantidade INT,
+    Preco DECIMAL(10,2),
+    Data DATE,
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ClienteID)
+);
+
+-- Inserir dados fictícios
+INSERT INTO Clientes VALUES
+(1, 'Ana', 'Sul'),
+(2, 'Carlos', 'Sudeste'),
+(3, 'Mariana', 'Norte'),
+(4, 'João', 'Sul');
+
+INSERT INTO Vendas VALUES
+(101, 1, 'Notebook', 2, 2500, '2024-01-07'),
+(102, 2, 'Celular', 5, 1200, '2024-01-10'),
+(103, 3, 'Camisa', 10, 50, '2024-01-05'),
+(104, 4, 'Monitor', 6, 800, '2024-01-20');
+
