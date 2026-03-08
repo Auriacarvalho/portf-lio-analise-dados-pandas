@@ -1,5 +1,4 @@
-
-# 🐍 portfólio: Análise Exploratória de Dados com Python
+## Análise Exploratória de Dados com Python
 
 ## 🎯 Objetivo
 Explorar dados fictícios de clientes e marketing, aplicando técnicas de EDA (Exploratory Data Analysis) com Pandas, Matplotlib e Seaborn.
