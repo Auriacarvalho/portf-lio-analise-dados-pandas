@@ -1,5 +1,4 @@
-#portfólio  analise-dados-pandas
-Exemplo prático de análise de dados em Python: estatísticas descritivas, visualizações e insights sobre comportamento de clientes.
+
 # 🐍 portfólio: Análise Exploratória de Dados com Python
 
 ## 🎯 Objetivo
